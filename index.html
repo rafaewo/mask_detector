@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mask Detector</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./public/style.css">
 </head>
 <body>
     <div class="header">
@@ -107,13 +107,13 @@
 
             if(no > com) {
                 document.getElementById("main").textContent = 'Entrada bloqueada.'
-                document.getElementById("padlock").src = "./locked.jpg"
+                document.getElementById("padlock").src = "./public/locked.jpg"
                 document.getElementById("padlock").hidden = false
                 document.getElementById("form").action = "/posts/block"
             }
             else {
                 document.getElementById("main").textContent = 'Entrada liberada.'
-                document.getElementById("padlock").src = "./unlocked.jpg"
+                document.getElementById("padlock").src = "./public/unlocked.jpg"
                 document.getElementById("padlock").hidden = false
                 document.getElementById("form").action = "/posts/pass"
             }
