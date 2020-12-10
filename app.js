@@ -9,7 +9,7 @@ const Route = require('./routes/index')
 app.use(cors())
 app.use(bodyParser.json())
 app.use('/posts', Route)
-app.use(express.static('public'))
+app.use(express.static('./'))
 
 app.get('/', (req, res) => {
     res.sendFile('./index.html', {root: __dirname})
