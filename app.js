@@ -4,11 +4,11 @@ const app = express()
 const bodyParser = require('body-parser')
 const cors = require('cors')
 
-const Route = require('./routes/index')
+// const Route = require('./routes/index')
 
 app.use(cors())
 app.use(bodyParser.json())
-app.use('/posts', Route)
+// app.use('/posts', Route)
 app.use(express.static('./'))
 
 app.get('/', (req, res) => {

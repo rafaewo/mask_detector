@@ -12,7 +12,7 @@ const door = require('./../model/detec')
 //     }
 // })
 
-// salva nova entrada
+// salva novas entradas, block e allow:
 router.post('/block', async (req, res) => {
     const post = new door({
         open: req.body.open
